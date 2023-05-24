@@ -1,109 +1,198 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+
+/***************** setting section *****************/
+.body-setting{
+    font-family: 'Atkinson Hyperlegible';
+    background-color: #152938;
+    background-size: cover;
 }
-body {
-  background-color: #f4c531;
+.setting-section{
+    height: max-content;
+    width: min(100%, 450px);
+    margin: auto;
+    font-family: sans-serif;
+    
 }
-.wrapper {
-  box-sizing: content-box;
-  width: 26.87em;
-  padding: 2.5em 3em;
-  background-color: #ffffff;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  border-radius: 0.6em;
-  box-shadow: 0 0.9em 2.8em rgba(86, 66, 0, 0.2);
+.setting-lable{
+    color: #FCFCFC;
+    padding-bottom: 20px;
+    text-align: center;
+    
 }
-.game-container {
-  position: relative;
-  width: 100%;
-  display: grid;
-  gap: 0.6em;
+.setting-form{
+    background-color:#FCFCFC;
+    display: flex;
+    flex-flow: wrap column;
+    gap: 30px;
+    padding: 30px;
+    border-radius: 20px;
+
 }
-.stats-container {
-  text-align: right;
-  margin-bottom: 1.2em;
+.setting-lable-input{
+    color: #7191a5;  
+    height: 25px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
 }
-.stats-container span {
-  font-weight: 600;
+.setting-input{
+    display: flex;
+    flex-flow:row;
+    justify-content: space-evenly;
+    gap: 30px;
 }
-.card-container {
-  position: relative;
-  width: 6.25em;
-  height: 6.25em;
-  cursor: pointer;
+.set-input{
+    display: none;
 }
-.card-before,
-.card-after {
-  position: absolute;
-  border-radius: 5px;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 4px solid #000000;
-  transition: transform 0.7s ease-out;
-  backface-visibility: hidden;
+table{
+    width: 100%;
+    table-layout: fixed;
 }
-.card-before {
-  background-color: #f4c531;
-  font-size: 2.8em;
-  font-weight: 600;
+td{
+    padding-right: 5px;
+    padding-left: 5px;
 }
-.card-after {
-  background-color: #ffffff;
-  transform: rotateY(180deg);
+.set-input-lable{
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    font-weight: 700;
+    text-align: center;
+    color: #FCFCFC;
+    border-radius: 20px;
+    background-color: #BCCED9;
+    transition: 0.1s linear background-color;
+    display: table-cell;
+    cursor: pointer
 }
-.card-container.flipped .card-before {
-  transform: rotateY(180deg);
+.set-input-lable:hover{
+    background-color: #304859;
 }
-.card-container.flipped .card-after {
-  transform: rotateY(0deg);
+.set-btn-start{
+    background: #fda214;
+    border-radius: 35px;
+    display: inline-block;
+    color: #FCFCFC;
+    border: none;
+    padding: 15px;
+    outline: #FCFCFC;
+    cursor: pointer;
+    font-size: 20px;
 }
-.controls-container {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  background-color: #f4c531;
-  top: 0;
+/*************** game page *****************/
+.body-game-page{
+    position: fixed;
+    background-color:#FCFCFC;
+    background-size: cover;
+    font-family: 'Atkinson Hyperlegible';
+
 }
-button {
-  border: none;
-  border-radius: 0.3em;
-  padding: 1em 1.5em;
-  cursor: pointer;
+.game-label{
+    float: left;
+    padding-left: 25px;
+    padding-top: 10px;
 }
-#stop, #start {
-  font-size: 1.1em;
-  display: block;
-  margin: 1.1em auto 0 auto;
-  background-color: #000000;
-  color: #ffffff;
+.btn-game{
+    display: inline;
+    flex-flow: column wrap;
+    gap: 20px;
+    position: fixed;
+    float: right;
+    top: 0;
+    right: 0;
+    height: auto;
+    padding: 30px;  
 }
-.controls-container button {
-  font-size: 1.3em;
-  box-shadow: 0 0.6em 2em rgba(86, 66, 0, 0.2);
+
+@media(min-width:748px){
+    .btn-game{
+        flex-flow: row;
+        }
 }
-.hide {
-  display: none;
+.btn-reset{
+    background-color:#fda214;
+    color: #FCFCFC;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+    font-weight: 700;
+    padding: 10px 25px;
+    height: max-content;
+    cursor: pointer;
+    text-align: center;
 }
-#result {
-  text-align: center;
+.btn-new-game{
+    background: color #dfe7ec;;
+    color:#152938;
+    border-radius: 20px;
+    outline: none;
+    border: none;
+
+    font-weight: 700;
+    padding: 10px 25px;
+    height: max-content;
+    cursor: pointer;
+    text-align: center;
 }
-#result h2 {
-  font-size: 2.5em;
+/***************** cards section ******************/
+
+/* .game-cards{
+    flex-flow: column;
+    justify-content: space-between;
+    justify-content: space-around;
+    gap: 30px;
+} */
+.memory-game-blocks{
+    display: flex;
+    width: 500px;
+    flex-wrap: wrap;
+    margin: 100px auto;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-0%,-0%);
+    margin: 0 auto;
 }
-#result h4 {
-  font-size: 1.8em;
-  margin: 0.6em 0 1em 0;
+
+.memory-game-blocks .game-block{
+    height: 100px;
+    transition: transform .5s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    position: relative;
+    flex: 1 0 120px ;
+    
 }
+.memory-game-blocks .game-block .front{
+    background-color:#304859;
+    line-height: 200px;
+    border-radius: 90px;
+    width: 70px;
+    height: 70px;
+}
+.memory-game-blocks .game-block .back{
+    background-color: #BCCED9;
+    transform: rotateY(180deg);
+    border-radius: 90px;
+    width: 70px;
+    height: 70px;
+    
+}
+.memory-game-blocks .game-block img{
+    width: 50px;
+    height: 50px;
+    margin: 5px 5px 5px 5px;
+}
+.memory-game-blocks .game-block .cards{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    text-align: center;
+    backface-visibility: hidden;
+}
+.memory-game-blocks .game-block.is-filpped{
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
