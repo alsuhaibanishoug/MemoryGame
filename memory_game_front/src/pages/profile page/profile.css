@@ -1,0 +1,129 @@
+.profile_container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.p16{
+    padding: 3% 9%;
+}
+
+.p16 .memo{
+    color: var(--dark);
+    font-size: 40px;
+}
+.p16 .profile_inner{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 51px;
+}
+
+.p16 .profile_inner .flex{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.p16 .profile_inner .flex .profile__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 36%;
+}
+
+.p16 .profile_inner .flex .profile__info .profile__image{
+    width: 60%;
+    text-align: center;
+
+}
+
+
+.p16 .profile_inner .flex .horizontal_divider{
+    border-left: 2px solid rgba(151, 151, 151, 0.3);
+    /* transform: rotate(-90deg); */
+    height: 729px;
+}
+.p16 .profile_inner .flex .top_3_games{
+    width: 63%;
+    padding: 0px 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* gap: 10px; */
+    /* border-left: 2px solid rgba(151, 151, 151, 0.3); */
+}
+.p16 .profile_inner .flex .top_3_games .score_main_title{
+    font-size: 40px;
+    color: var(--dark);
+}
+.p16 .profile_inner .flex .top_3_games .single_score_item{
+    position: relative;
+    width: 100%;
+    padding-left: 9px;
+    display: flex;
+    justify-content: space-between;
+}
+.p16 .profile_inner .flex .top_3_games .single_score_item .num{
+    font-size: 76px;
+    color: var(--orange);
+    width: 10%;
+}
+.p16 .profile_inner .flex .top_3_games .single_score_item .game_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    top: 59px;
+    width: 85%;
+}
+
+.p16 .profile_inner .flex .top_3_games .single_score_item .game_info .tile{
+    width: 100%;
+    border-radius: 10px;
+    background-color: #DFE7EC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 32px;
+    height: 72px;
+}
+.p16 .profile_inner .flex .top_3_games .single_score_item .game_info .tile .tile_title{
+    font-size: 18px;
+    color: var(--tileTitle);
+}
+
+.p16 .profile_inner .flex .top_3_games .single_score_item .game_info .tile .tile_content{
+    font-size: 32px;
+    color: var(--tileContent);
+}
+
+@media screen and (max-width: 1000px) {
+    .p16 .profile_inner{
+        margin-top: 35px;
+    }
+    .p16 .profile_inner .flex{
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        gap: 20px;
+    }
+    .p16 .profile_inner .flex .horizontal_divider{
+        display: none;
+    }
+    .p16 .profile_inner .flex .top_3_games{
+        width: 100%;
+        padding: 0;
+    }
+    .p16 .profile_inner .flex .top_3_games .single_score_item .game_info .tile .tile_content{
+        font-size: 25px;
+    }
+    /* .p15 .signin__contianer{
+        flex-direction: column;
+        align-items: end;
+        margin-top: 7.1%;
+    } */
+    /* .p15 .contianer div:first-child{
+        align-items: baseline !important;
+    } */
+}

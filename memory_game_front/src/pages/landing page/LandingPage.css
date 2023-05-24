@@ -1,0 +1,49 @@
+.landing{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--orange);
+}
+.p15{
+    /* padding: 5%; */
+    /* padding: 1%; */
+    color: white;
+}
+.p15 .main_title{
+    font-size: 8vw;
+    line-height: 161px;
+}
+
+.p15 .signin{
+    font-size: 24px;
+    line-height: 30px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.p15 .bTxt{
+    padding: 4.5% 3.3%;
+    font-size: 35px;
+    line-height: 43.4px;
+    color: var(--bodyText);
+}
+.p15 .signup__btn{
+    width: 541px;
+    background-color: white;
+    line-height: 39.68px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 35px;
+    font-size: 32px;
+    color: var(--orange);
+    user-select: none;
+    cursor: pointer;
+}
+.p15 .signup__btn p{
+    margin: 0;
+}
+/* .landing .p15 .row{
+    justify-content: space-between !important;
+    align-items: start !important;
+} */

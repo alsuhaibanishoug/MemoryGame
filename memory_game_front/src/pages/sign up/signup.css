@@ -1,0 +1,122 @@
+.p15 .signin__btn{
+    user-select: none;
+    cursor: pointer;
+    width: 131.81px;
+    height: 46px;
+    border-radius: 26px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.p15 .signin__contianer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.p15 .signin__btn span{
+    font-size: 24px;
+    height: 30px;
+    line-height: 30px;
+    color: var(--orange);
+    white-space: nowrap;
+}
+.p15 .form__container{
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.p15 .form__container .form__title{
+    color: var(--orange);
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.p15 .form__container form{
+    padding: 0 30px;
+}
+
+.p15 .form__container .form-label{
+    color: var(--orange);
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.p15 .form__container .form-control{
+    border-radius: 26px !important;
+}
+
+.p15 .form__container .form-check-input:checked{
+    background-color: var(--orange) !important;
+    border-color: var(--orange) !important;
+}
+
+.p15 .form__container .form-check-input[type=checkbox]{
+    border-radius: 0;
+    width: 26.25px;
+    height: 26.25px;
+}
+
+.p15 .form__container .form-check-label{
+    color: #979797;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.p15 .form__container .btn_sign{
+    width: 100%;
+    border-radius: 35px;
+    font-size: 32px;
+    background-color: var(--orange);
+    border: var(--orange);
+}
+
+.p15 .form__container .btn_sign:hover{
+    background-color: #FFB84A;
+}
+
+.p15 .line_braker{
+    margin-top: 32px;
+    width: 86%;
+    border: 2px solid rgba(151, 151, 151, 0.3);
+}
+
+.p15 .or{
+    position: absolute;
+    color: var(--orange);
+    font-size: 20px;
+    top: 19px;
+    background-color: white;
+    width: 45px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.p15 .social{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.p15 .social .social__inner{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.p15 .social .social__inner .social__icon{}
+
+@media screen and (max-width: 760px) {
+    .p15 .signin__contianer{
+        flex-direction: column;
+        align-items: end;
+        margin-top: 7.1%;
+    }
+    /* .p15 .contianer div:first-child{
+        align-items: baseline !important;
+    } */
+}
