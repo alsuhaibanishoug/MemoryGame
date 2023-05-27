@@ -7,9 +7,22 @@
     padding: 3% 9%;
 }
 
-.p16 .memo{
+.container_memo{
+    width: 131.81px;
+    height: 46px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.container_memo .memo{
     color: var(--dark);
     font-size: 40px;
+    cursor: pointer;
+    
+}
+.memo:hover{
+    background-color: var(--orange);
+    color: white;
 }
 .p16 .profile_inner{
     width: 100%;

@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import {useNavigate } from "react-router-dom";
 import './profile.css'
 import prof from "./profile.png"
 
 const Profile = () => {
 
+    const navigate = useNavigate()
+    
     const token = localStorage.getItem('token');
     const [userData, setUserData] = useState({
         name: '',
@@ -34,7 +37,11 @@ const Profile = () => {
     return (
         <div className='profile_container'>
             <div className='p16'>
-                <div className='memo'>memory</div>
+            <div className='container_memo'>
+                <div className='memo' onClick={() => {
+                    navigate('/startgame')
+                }}>memory</div>
+                </div>
                 <div className='profile_inner'>
                     <div className='flex'>
                     <div className='profile__info'>
