@@ -12,7 +12,9 @@ import SignUp from './pages/sign up/SignUp';
 import SignIn from './pages/sign in/SignIn';
 import StartGame from './pages/home/StartGame';
 import Profile from './pages/profile page/Profile';
-
+import GameModal from './pages/game modal/GameModal';
+import GameMain from './pages/game mian/GameMain';
+// node_modules\bootstrap\dist\js\bootstrap.js
 
 const router = createBrowserRouter([
   {
@@ -36,6 +38,20 @@ const router = createBrowserRouter([
         return null;
       }},
       {path: 'profile', element: <Profile/>, loader: () => {
+        const rem = localStorage.getItem('remember');
+        if(rem === 'false' || rem === ''){
+          return redirect('/signin');
+        }
+        return null;
+      }},
+      {path: 'setTheme', element: <GameModal/>, loader: () => {
+        const rem = localStorage.getItem('remember');
+        if(rem === 'false' || rem === ''){
+          return redirect('/signin');
+        }
+        return null;
+      }},
+      {path: 'game', element: <GameMain/>, loader: () => {
         const rem = localStorage.getItem('remember');
         if(rem === 'false' || rem === ''){
           return redirect('/signin');
