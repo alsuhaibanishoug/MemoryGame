@@ -1,0 +1,103 @@
+.modal_bg{
+    width: 100%;
+    background-color: var(--dark);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.modal_header, .memo{
+    font-size: 40px;
+}
+
+.modal_bg .modal_header{
+    
+    color: white;
+}
+
+.modal_bg .modal_content{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 31px;
+    /* position: relative; */
+}
+
+.modal_bg .modal_content .close_btn_container{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.modal_bg .modal_content .close_btn{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.modal_bg .modal_content .close_btn:hover{
+    color: #FFB84A;
+}
+
+.modal_bg .modal_content .close_btn img{
+    width: 100%;
+}
+
+.modal_bg .modal_content .modal_content_inner{
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: var(--tileTitle);
+    font-size: 20px;
+}
+.modal_bg .modal_content .modal_content_inner .theme_buttons{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.modal_bg .modal_content .modal_content_inner .theme_buttons .but, .modal_bg .modal_content .modal_content_inner .theme_buttons .but_sm{
+    width: 256px;
+    border-radius: 26px;
+    background-color: var(--butBgColor);
+    text-align: center;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal_bg .modal_content .modal_content_inner .theme_buttons .but:hover{
+    background-color: var(--butHoverColor) ;
+}
+
+.active{
+    background-color: var(--dark) !important;
+}
+
+.modal_bg .modal_content .modal_content_inner .start_btn{
+    width: 100%;
+    background-color: var(--orange);
+    text-align: center;
+    border-radius: 35px;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+}
+
+.modal_bg .modal_content .modal_content_inner .start_btn:hover{
+    background-color: #FFB84A;
+}
+
+@media screen and (max-width: 650px) {
+    .modal_bg .modal_content .modal_content_inner .theme_buttons .but{
+        font-size: 20px;
+        padding: 6px;
+    }
+}
