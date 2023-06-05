@@ -14,10 +14,13 @@
 }
 
 .modal_bg .modal_header{
-    
+    cursor: pointer;
     color: white;
 }
-
+.modal_header:hover{
+    background-color: var(--orange);
+    color: white;
+}
 .modal_bg .modal_content{
     background-color: white;
     border-radius: 20px;

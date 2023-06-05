@@ -103,7 +103,9 @@ const GameModal = () => {
     }
     return (
         <div className="modal_bg">
-            <div className="modal_header">memory</div>
+            <div className="modal_header" onClick={() => {
+                    navigate('/startgame',{replace:true})
+                }} >memory</div>
             <Col xxl={5} xl={5} lg={7} md={8} sm={10} xs={11} className="modal_content ">
                 <div className="close_btn_container">
                 <div className="close_btn" onClick={() => {navigate(-1)}}>
