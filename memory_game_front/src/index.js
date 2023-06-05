@@ -13,7 +13,7 @@ import SignIn from './pages/sign in/SignIn';
 import StartGame from './pages/home/StartGame';
 import Profile from './pages/profile page/Profile';
 import GameModal from './pages/game modal/GameModal';
-import GameMain from './pages/game mian/GameMain';
+import GameMain from './pages/game main/GameMain';
 // node_modules\bootstrap\dist\js\bootstrap.js
 
 const router = createBrowserRouter([
