@@ -94,29 +94,10 @@
     margin-bottom: 5px;
 }
 
-.p15 .social{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.p15 .social .social__inner{
-    width: 40%;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.p15 .social .social__inner .social__icon{}
-
 @media screen and (max-width: 760px) {
     .p15 .signin__contianer{
         flex-direction: column;
         align-items: end;
         margin-top: 7.1%;
     }
-    /* .p15 .contianer div:first-child{
-        align-items: baseline !important;
-    } */
 }
