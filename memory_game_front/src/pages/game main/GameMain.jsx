@@ -9,6 +9,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const GameMain = () => {
 
     const navigate = useNavigate();
+    
     const [numberList6, setNumberList6] = useState([
         { id: 1, num: 1, state: '' },
         { id: 1, num: 1, state: '' },
@@ -67,8 +68,6 @@ const GameMain = () => {
         { id: 8, num: 8, state: '' }
     ].sort(() => Math.random() - 0.5))
 
-
-
     const [iconsList6, useIconList6] = useState([
         { id: 1, icon: "fa-solid fa-futbol", state: '' },
         { id: 1, icon: "fa-solid fa-futbol", state: '' },
@@ -126,6 +125,7 @@ const GameMain = () => {
         { id: 8, icon: "fa-solid fa-place-of-worship", state: '' },
         { id: 8, icon: "fa-solid fa-place-of-worship", state: '' }
     ].sort(() => Math.random() - 0.5));
+
     const [movesCounter, setMovesCounter] = useState(0);
     const [prev, setPrev] = useState(-1)
     const [isStarted, setIsStarted] = useState(false);

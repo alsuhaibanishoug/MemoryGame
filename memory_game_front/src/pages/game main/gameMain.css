@@ -106,7 +106,7 @@
 }
 
 .game_main .container .hideCard{
-    animation: hideCard 2s linear;
+    animation: hideCard 4s linear;
 }
 
 
@@ -116,7 +116,7 @@
 }
 
 .game_main .container .card .hideChiled{
-    animation: hideChiled 1.7s linear;
+    animation: hideChiled 3.7s linear;
 }
 
 .game_main .container .card svg{
